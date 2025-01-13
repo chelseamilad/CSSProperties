@@ -1,0 +1,165 @@
+/* Base styles remain the same */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F75C3C;
+  color: #fff;
+  padding: 2rem;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  color: black;
+  font-size: 3rem;
+  margin: 0 0 1rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  color: black;
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  transform: rotate(-1deg);
+}
+
+.hero-image {
+  max-width: 45%;
+}
+
+.desktop-only {
+  display: inline-block;
+}
+
+.mobile-only {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    position: relative; 
+  }
+
+  .hero-content {
+    position: relative; 
+    z-index: 10; 
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    padding-top: 100px;
+    text-align: left;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    z-index: 10; 
+    position: relative;
+  }
+
+  .desktop-only {
+    display: none; 
+  }
+
+  .mobile-only {
+    display: inline-block; 
+    margin: 1rem auto;
+    padding: 0.75rem 2.5rem; 
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 80%; 
+    text-align: center; 
+  }
+
+  .hero-image {
+    max-width: 80%;
+    position: relative;
+    top: -170px;
+    z-index: 5; 
+  }
+
+  .hero-image img {
+    width: 100%;
+    transform: rotate(-1deg);
+    position: relative;
+  }
+  .emoji{
+    display: none;
+  }
+}
